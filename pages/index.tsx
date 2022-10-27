@@ -1,8 +1,26 @@
 import type { NextPage } from "next";
+import { useEffect } from "react";
 import { NextIcon, ReactIcon } from "../components/icons/";
-import { LazyShow } from "../components/LazyShow";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Home: NextPage = () => {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
+  const boxVariant = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0, scale: 0 },
+  };
+
   return (
     <div className="flex flex-col h-screen">
       <header className="mt-5">
@@ -26,12 +44,18 @@ const Home: NextPage = () => {
         </h1>
         <h2 className="text-4xl font-mono text-cyan-300 my-5">I am Lukas</h2>
         <section>
-          <LazyShow>
-            <div className="flex justify-between items-center gap-10">
-              <NextIcon />
-              <ReactIcon />
-            </div>
-          </LazyShow>
+          <div className="h-96 bg-red-100"></div>
+          <div className="h-96 bg-red-200"></div>
+          <motion.div
+            className="flex justify-between items-center gap-10"
+            ref={ref}
+            initial="hidden"
+            animate={control}
+            variants={boxVariant}
+          >
+            <NextIcon />
+            <ReactIcon />
+          </motion.div>
         </section>
       </main>
       <footer>
