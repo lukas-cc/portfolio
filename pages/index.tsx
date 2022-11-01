@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useEffect } from "react";
 import { NextIcon, ReactIcon } from "../components/icons/";
+import { ClockTimer } from "../components/icons/Clock";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -42,11 +43,16 @@ const Home: NextPage = () => {
           </ul>
         </nav>
       </header>
-      <main className="mt-10 mb-auto flex justify-center items-center flex-col">
+      <main className="mt-10 mb-auto flex justify-center items-center flex-col gap-4">
         <h1 className="text-8xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-400">
           Hello.
         </h1>
-        <h2 className="text-4xl font-mono text-cyan-300 my-5">I am Lukas</h2>
+        <p className="text-4xl font-mono text-cyan-300 my-5">I am Lukas</p>
+        <p className="text-2xl">I am 22 years old</p>
+        <p className="text-2xl">
+          A frontend software engineer. Currently doing my masters in computer
+          science in Hamburg.
+        </p>
         <section>
           <div className="h-96 bg-red-100"></div>
           <div className="h-96 bg-red-200"></div>
