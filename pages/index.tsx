@@ -4,8 +4,6 @@ import { NextIcon, ReactIcon } from "../components/icons/";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-//test
-
 const Home: NextPage = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
