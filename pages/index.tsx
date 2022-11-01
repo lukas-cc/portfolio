@@ -57,8 +57,8 @@ const Home: NextPage = () => {
             animate={control}
             variants={boxVariant}
           >
-            <NextIcon />
-            <ReactIcon />
+            <NextIcon width={160} height={120} />
+            <ReactIcon width={64} height={64} />
           </motion.div>
         </section>
       </main>

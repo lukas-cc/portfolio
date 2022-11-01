@@ -1,10 +1,16 @@
 import React from "react";
 
-export const NextIcon = () => {
+export const NextIcon = ({
+  width,
+  height,
+}: {
+  width: number;
+  height: number;
+}) => {
   return (
     <svg
-      width="160"
-      height="120"
+      width={width}
+      height={height}
       viewBox="0 0 394 80"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
