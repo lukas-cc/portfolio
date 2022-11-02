@@ -4,6 +4,7 @@ import { NextIcon, ReactIcon } from "../components/icons/";
 import { ClockTimer } from "../components/icons/Clock";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { HoverText } from "../components/HoverText";
 
 const Home: NextPage = () => {
   const control = useAnimation();
@@ -31,28 +32,24 @@ const Home: NextPage = () => {
       <header className="mt-5">
         <nav>
           <ul className=" flex justify-end gap-20 mr-10 text-2xl">
-            <a className="transition ease-in-out delay-50 hover:text-yellow-300 hover:scale-110">
+            <a className="transition ease-in-out delay-50 hover:text-yellow-300 hover:scale-110 cursor-pointer">
               Home
             </a>
-            <a className="transition ease-in-out delay-50 hover:text-yellow-300 hover:scale-110">
+            <a className="transition ease-in-out delay-50 hover:text-yellow-300 hover:scale-110 cursor-pointer">
               About
             </a>
-            <a className="transition ease-in-out delay-50 hover:text-yellow-300 hover:scale-110">
+            <a className="transition ease-in-out delay-50 hover:text-yellow-300 hover:scale-110 cursor-pointer">
               Contact
             </a>
           </ul>
         </nav>
       </header>
       <main className="mt-10 mb-auto flex justify-center items-center flex-col gap-4">
-        <h1 className="text-8xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-400">
+        <h1 className="text-9xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-400">
           Hello.
         </h1>
-        <p className="text-4xl font-mono text-cyan-300 my-5">I am Lukas</p>
-        <p className="text-2xl">I am 22 years old</p>
-        <p className="text-2xl">
-          A frontend software engineer. Currently doing my masters in computer
-          science in Hamburg.
-        </p>
+        <p className="text-6xl font-mono text-cyan-300 my-5">I am Lukas</p>
+        <HoverText text={["A", "frontend", "software", "engineer."]} />
         <section>
           <div className="h-96 bg-red-100"></div>
           <div className="h-96 bg-red-200"></div>
