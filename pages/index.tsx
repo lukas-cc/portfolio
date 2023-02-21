@@ -1,32 +1,11 @@
 import type { NextPage } from "next";
 import { useEffect } from "react";
 import { NextIcon, ReactIcon } from "../components/icons/";
-import { ClockTimer } from "../components/icons/Clock";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { HoverText } from "../components/HoverText";
 
 const Home: NextPage = () => {
-  const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
-  }, [control, inView]);
-
-  const boxVariant = {
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { duration: 1, ease: "easeOut" },
-    },
-    hidden: { opacity: 0, scale: 0 },
-  };
-
   return (
     <div className="flex flex-col h-screen">
       <header className="mt-5">
@@ -46,7 +25,7 @@ const Home: NextPage = () => {
       </header>
       <main className="mt-10 mb-auto flex justify-center items-center flex-col gap-4">
         <h1 className="text-9xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-400">
-          Hello.
+          Hello
         </h1>
         <p className="text-6xl font-mono text-cyan-300 my-5">I am Lukas</p>
         <HoverText text={["A", "frontend", "software", "engineer."]} />
@@ -54,11 +33,11 @@ const Home: NextPage = () => {
           <div className="h-96 bg-red-100"></div>
           <div className="h-96 bg-red-200"></div>
           <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
             className="flex justify-between items-center gap-10"
-            ref={ref}
-            initial="hidden"
-            animate={control}
-            variants={boxVariant}
           >
             <NextIcon width={160} height={120} />
             <ReactIcon width={64} height={64} />
