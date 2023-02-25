@@ -1,8 +1,6 @@
 import type { NextPage } from "next";
-import { useEffect } from "react";
 import { NextIcon, ReactIcon } from "../components/icons/";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import { HoverText } from "../components/HoverText";
 
 const Home: NextPage = () => {
