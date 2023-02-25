@@ -24,10 +24,10 @@ const Home: NextPage = () => {
         </nav>
       </header>
       <main className="mt-10 mb-auto flex justify-center items-center flex-col gap-4">
-        <h1 className="text-9xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-400">
+        <h1 className="text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-400">
           Hello
         </h1>
-        <p className="text-6xl font-mono text-cyan-300 my-5">I am Lukas</p>
+        <p className="text-6xl text-cyan-300 my-5">I am Lukas</p>
         <HoverText text={["A", "frontend", "software", "engineer."]} />
         <section>
           <div className="h-96 bg-red-100"></div>
