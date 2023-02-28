@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
-import { NextIcon, ReactIcon } from "../components/icons/";
-import { motion } from "framer-motion";
-import { HoverText } from "../components/HoverText";
+import { HoverText, SkillSection } from "../components";
 
 const Home: NextPage = () => {
   return (
@@ -27,20 +25,7 @@ const Home: NextPage = () => {
         </h1>
         <p className="text-6xl text-cyan-300 my-5">I am Lukas</p>
         <HoverText text={["A", "frontend", "software", "engineer."]} />
-        <section>
-          <div className="h-96 bg-red-100"></div>
-          <div className="h-96 bg-red-200"></div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            className="flex justify-between items-center gap-10"
-          >
-            <NextIcon width={160} height={120} />
-            <ReactIcon width={64} height={64} />
-          </motion.div>
-        </section>
+        <SkillSection />
       </main>
       <footer>
         <p className="text-green-300"> Hallo </p>

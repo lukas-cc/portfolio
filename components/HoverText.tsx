@@ -6,7 +6,7 @@ export const HoverText = ({ text }: { text: string[] }) => {
       {text.map((elem) => (
         <p
           key={elem}
-          className="text-2xl transition ease-in-out delay-50 hover:text-yellow-200 hover:scale-105"
+          className="text-3xl transition ease-in-out delay-50 hover:text-pink-400"
         >
           {elem}
         </p>
