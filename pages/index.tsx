@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { HoverText, SkillSection } from "../components";
+import { TypingAnimation } from "../components/TypingAnimation";
 
 const Home: NextPage = () => {
   return (
@@ -20,21 +21,12 @@ const Home: NextPage = () => {
         </nav>
       </header>
       <main className="mt-20 mb-auto flex flex-col items-center justify-center gap-4">
-        <h1 className="bg-gradient-to-r from-orange-400 to-cyan-400 bg-clip-text text-9xl font-bold text-transparent md:text-[200px]">
+        <h1 className="bg-gradient-to-r from-orange-400 to-cyan-400 bg-clip-text text-9xl font-bold text-transparent md:text-[180px]">
           Hello
         </h1>
-        <p className="my-5 text-6xl text-cyan-300">I am Lukas</p>
+        <TypingAnimation />
         <HoverText
-          text={[
-            "A",
-            "frontend",
-            "software",
-            "engineer.",
-            "Currently",
-            "studying",
-            "computer science",
-            "@ UHH",
-          ]}
+          text={["Currently", "studying", "computer science", "@ UHH"]}
         />
         <HoverText text={["Technologies", "I", "use:"]} />
         <SkillSection />
