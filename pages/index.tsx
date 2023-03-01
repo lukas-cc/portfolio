@@ -3,33 +3,42 @@ import { HoverText, SkillSection } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex h-screen flex-col">
       <header className="mt-5">
         <nav>
-          <ul className=" flex justify-end gap-20 mr-10 text-2xl">
-            <a className="transition ease-in-out delay-50 hover:text-yellow-300 hover:scale-110 cursor-pointer">
+          <ul className="flex flex-wrap justify-center gap-12 text-2xl md:mr-10 md:justify-end md:gap-20 ">
+            <a className="delay-50 cursor-pointer transition ease-in-out hover:scale-110 hover:text-yellow-300">
               Home
             </a>
-            <a className="transition ease-in-out delay-50 hover:text-yellow-300 hover:scale-110 cursor-pointer">
+            <a className="delay-50 cursor-pointer transition ease-in-out hover:scale-110 hover:text-yellow-300">
               About
             </a>
-            <a className="transition ease-in-out delay-50 hover:text-yellow-300 hover:scale-110 cursor-pointer">
+            <a className="delay-50 cursor-pointer transition ease-in-out hover:scale-110 hover:text-yellow-300">
               Contact
             </a>
           </ul>
         </nav>
       </header>
-      <main className="mt-10 mb-auto flex justify-center items-center flex-col gap-4">
-        <h1 className="text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-400">
+      <main className="mt-20 mb-auto flex flex-col items-center justify-center gap-4">
+        <h1 className="bg-gradient-to-r from-orange-400 to-cyan-400 bg-clip-text text-9xl font-bold text-transparent md:text-[200px]">
           Hello
         </h1>
-        <p className="text-6xl text-cyan-300 my-5">I am Lukas</p>
-        <HoverText text={["A", "frontend", "software", "engineer."]} />
+        <p className="my-5 text-6xl text-cyan-300">I am Lukas</p>
+        <HoverText
+          text={[
+            "A",
+            "frontend",
+            "software",
+            "engineer.",
+            "Currently",
+            "studying",
+            "computer science",
+            "@ UHH",
+          ]}
+        />
+        <HoverText text={["Technologies", "I", "use:"]} />
         <SkillSection />
       </main>
-      <footer>
-        <p className="text-green-300"> Hallo </p>
-      </footer>
     </div>
   );
 };
