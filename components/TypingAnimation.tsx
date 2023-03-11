@@ -5,7 +5,7 @@ export const TypingAnimation = () => {
     <div className="flex gap-4">
       <p className="my-5 text-5xl text-cyan-300">I am Lukas:</p>
       <TypeAnimation
-        sequence={["frontend software engineer", 1000, "student", 1000]}
+        sequence={["developer", 1500, "student", 1500]}
         wrapper="div"
         cursor={true}
         repeat={Infinity}

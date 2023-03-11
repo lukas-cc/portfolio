@@ -26,7 +26,16 @@ const Home: NextPage = () => {
         </h1>
         <TypingAnimation />
         <HoverText
-          text={["Currently", "studying", "computer science", "@ UHH"]}
+          text={[
+            "A",
+            "frontend",
+            "software",
+            "engineer.",
+            "Currently",
+            "studying",
+            "computer science",
+            "@ UHH",
+          ]}
         />
         <HoverText text={["Technologies", "I", "use:"]} />
         <SkillSection />
