@@ -31,13 +31,15 @@ const Home: NextPage = () => {
             "frontend",
             "software",
             "engineer.",
-            "Currently",
-            "studying",
-            "computer science",
+            "Doing",
+            "my",
+            "masters",
+            "in",
+            "computer",
+            "science",
             "@ UHH",
           ]}
         />
-        <HoverText text={["Technologies", "I", "use:"]} />
         <SkillSection />
       </main>
     </div>
