@@ -8,6 +8,7 @@ export const ProjectGrid = () => {
       <ProjectCard
         title="Weather App"
         text="A simple but beautiful weather app"
+        href="https://weather-app-ts-ruddy.vercel.app/"
       >
         <Image
           src="/weather-app.png"
@@ -16,7 +17,11 @@ export const ProjectGrid = () => {
           height={400}
         />
       </ProjectCard>
-      <ProjectCard title="Immo Search" text="Look up beatiful properties">
+      <ProjectCard
+        title="Immo Search"
+        text="Look up beatiful properties"
+        href="https://immo-search.vercel.app/"
+      >
         <Image
           src="/immo-search.png"
           alt="immo search"
