@@ -1,10 +1,15 @@
+import React from "react";
 import type { NextPage } from "next";
-import { HoverText, SkillSection } from "../components";
-import { TypingAnimation } from "../components/TypingAnimation";
+import {
+  HoverText,
+  SkillSection,
+  TypingAnimation,
+  ProjectGrid,
+} from "../components";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex h-screen flex-col">
+    <div className="flex flex-col">
       <header className="mt-5">
         <nav>
           <ul className="flex flex-wrap justify-center gap-12 text-2xl md:mr-10 md:justify-end md:gap-20 ">
@@ -40,7 +45,11 @@ const Home: NextPage = () => {
             "@ UHH",
           ]}
         />
-        <SkillSection />
+        <section className="mt-10 flex flex-col gap-32">
+          <SkillSection />
+
+          <ProjectGrid />
+        </section>
       </main>
     </div>
   );
