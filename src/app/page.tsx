@@ -1,11 +1,6 @@
-import React from "react";
 import type { NextPage } from "next";
-import {
-  HoverText,
-  SkillSection,
-  TypingAnimation,
-  ProjectGrid,
-} from "../components";
+import { HoverText, ProjectGrid } from "../components/server";
+import { SkillSection, TypingAnimation } from "../components/client";
 
 const Home: NextPage = () => {
   return (
@@ -25,7 +20,7 @@ const Home: NextPage = () => {
           </ul>
         </nav>
       </header>
-      <main className="mt-20 mb-auto flex flex-col items-center justify-center gap-4">
+      <main className="mb-auto mt-20 flex flex-col items-center justify-center gap-4">
         <h1 className="bg-gradient-to-r from-orange-400 to-cyan-400 bg-clip-text text-9xl font-bold text-transparent md:text-[180px]">
           Hello
         </h1>

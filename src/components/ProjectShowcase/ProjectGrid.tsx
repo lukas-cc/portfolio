@@ -15,6 +15,7 @@ export const ProjectGrid = () => {
           alt="weather app"
           width={400}
           height={400}
+          priority
         />
       </ProjectCard>
       <ProjectCard
@@ -27,6 +28,7 @@ export const ProjectGrid = () => {
           alt="immo search"
           width={400}
           height={400}
+          priority
         />
       </ProjectCard>
     </div>
