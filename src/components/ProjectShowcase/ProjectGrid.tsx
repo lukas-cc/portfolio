@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { ProjectCard } from "./ProjectCard";
 
@@ -7,7 +6,7 @@ export const ProjectGrid = () => {
     <div className="flex gap-6">
       <ProjectCard
         title="Weather App"
-        text="A simple but beautiful weather app"
+        text="A simple and beautiful weather app"
         href="https://weather-app-ts-ruddy.vercel.app/"
       >
         <Image
@@ -20,7 +19,7 @@ export const ProjectGrid = () => {
       </ProjectCard>
       <ProjectCard
         title="Immo Search"
-        text="Look up beatiful properties"
+        text="Look up properties"
         href="https://immo-search.vercel.app/"
       >
         <Image

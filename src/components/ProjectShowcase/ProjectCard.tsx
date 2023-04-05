@@ -1,19 +1,17 @@
-import React from "react";
-
 type ProjectCardProps = {
   children: React.ReactNode;
   title: string;
   text: string;
   href: string;
 };
-export const ProjectCard: React.FC<ProjectCardProps> = ({
+export const ProjectCard = ({
   children,
   title,
   text,
   href,
-}) => {
+}: ProjectCardProps) => {
   return (
-    <div className="card card-compact w-96 bg-base-300 shadow-xl">
+    <div className="card-compact card w-96 bg-base-300 shadow-xl">
       <figure>{children}</figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>

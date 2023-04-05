@@ -1,5 +1,3 @@
-import React from "react";
-
 export const HoverText = ({ text }: { text: string[] }) => {
   return (
     <div className="flex flex-wrap justify-center gap-2">
