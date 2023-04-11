@@ -2,7 +2,7 @@ import { SocialLinks } from "../../components/SocialLinks";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-20">
       <div className="mt-8 flex w-full justify-center">
         <section className="flex max-w-2xl flex-col text-center text-xl">
           <h1 className="mb-8 text-6xl">About me</h1>
@@ -12,7 +12,7 @@ const About = () => {
           </p>
           <p>I mostly do frontend stuff for the web.</p>
           <p>
-            And I <b className="text-secondary">love</b> it.
+            And I <b className="text-accent">love</b> it.
           </p>
           <p>
             When developing an app, I don&apos;t only focus on the functional
