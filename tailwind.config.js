@@ -6,6 +6,28 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["night"],
+    themes: [
+      {
+        theme: {
+          primary: "#67e8f9",
+
+          secondary: "#fde047",
+
+          accent: "#F471B5",
+
+          neutral: "#1E293B",
+
+          "base-100": "#111827",
+
+          info: "#0CA5E9",
+
+          success: "#2DD4BF",
+
+          warning: "#F4BF50",
+
+          error: "#FB7085",
+        },
+      },
+    ],
   },
 };

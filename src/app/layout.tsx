@@ -16,24 +16,21 @@ export default function RootLayout({
   return (
     <html lang="en" className={quicksand.className}>
       <body>
-        <header className="mt-5">
+        <header className="sticky top-0 bg-base-100 py-5">
           <nav>
             <ul className="flex flex-wrap justify-center gap-12 text-2xl md:mr-10 md:justify-end md:gap-20 ">
               <Link
                 href="/"
-                className="delay-50 cursor-pointer transition ease-in-out hover:scale-110 hover:text-yellow-300"
+                className="delay-50 cursor-pointer transition ease-in-out hover:scale-110 hover:text-secondary"
               >
                 Home
               </Link>
               <Link
                 href="about"
-                className="delay-50 cursor-pointer transition ease-in-out hover:scale-110 hover:text-yellow-300"
+                className="delay-50 cursor-pointer transition ease-in-out hover:scale-110 hover:text-secondary"
               >
                 About
               </Link>
-              <a className="delay-50 cursor-pointer transition ease-in-out hover:scale-110 hover:text-yellow-300">
-                Contact
-              </a>
             </ul>
           </nav>
         </header>
