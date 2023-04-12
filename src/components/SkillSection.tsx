@@ -28,7 +28,12 @@ export const SkillSection = () => {
           viewport={{ once: true }}
           transition={{ delay: index * 0.2, duration: 1.2, ease: "easeOut" }}
         >
-          {icon}
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{ delay: 0.05, ease: "easeOut" }}
+          >
+            {icon}
+          </motion.div>
         </motion.div>
       ))}
     </div>
