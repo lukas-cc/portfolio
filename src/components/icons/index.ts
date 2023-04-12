@@ -4,3 +4,4 @@ export * from "./TypescriptIcon";
 export * from "./MuiIcon";
 export * from "./TailwindIcon";
 export * from "./GithubIcon";
+export * from "./TwitterIcon";

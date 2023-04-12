@@ -2,9 +2,9 @@ import { SocialLinks } from "../../components/SocialLinks";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-20">
+    <div className="flex w-full flex-col justify-center gap-20">
       <div className="mt-8 flex w-full justify-center">
-        <section className="flex max-w-2xl flex-col text-center text-xl">
+        <section className="flex w-1/2 flex-col text-center text-xl">
           <h1 className="mb-8 text-6xl">About me</h1>
           <p>
             Hey! I am Lukas. I am 23 years and I currently live in Hamburg,

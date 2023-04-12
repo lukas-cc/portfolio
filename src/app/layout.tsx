@@ -6,6 +6,9 @@ const quicksand = Quicksand({ subsets: ["latin"] });
 export const metadata = {
   title: "Lukas Portfolio",
   description: "Welcome to my personal portfolio",
+  icons: {
+    icon: "/my-logo.svg",
+  },
 };
 
 export default function RootLayout({
