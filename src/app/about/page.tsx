@@ -16,7 +16,7 @@ const About = () => {
           </p>
           <p>
             When developing an app, I don&apos;t only focus on the functional
-            aspects. But also how my apps feels and looks like. I put a lot of
+            aspects. But also how my apps feel and look like. I put a lot of
             emphasis on building stunning user interfaces.
           </p>
         </section>
