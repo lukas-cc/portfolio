@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 export const metadata = {
-  title: "Lukas Portfolio",
+  title: "Lukas Ciepielowski",
   description: "Welcome to my personal portfolio",
   icons: {
     icon: "/my-logo.svg",

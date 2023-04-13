@@ -8,16 +8,16 @@ const About = () => {
           <h1 className="mb-8 text-6xl">About me</h1>
           <p>
             Hey! I am Lukas. I am 23 years old and I currently live in Hamburg,
-            Germany.
+            Germany. I mostly do frontend stuff for the web.
           </p>
-          <p>I mostly do frontend stuff for the web.</p>
           <p>
             And I <b className="text-accent">love</b> it.
           </p>
           <p>
-            When developing an app, I don&apos;t only focus on the functional
-            aspects. But also how my apps feel and look like. I put a lot of
-            emphasis on building stunning user interfaces.
+            In addition to functional aspects of an app, I also put effort to
+            the look and feel of that app. This means that I strive to create an
+            aesthetically pleasing and intuitive design that enhances the
+            overall user experience and satisfaction with the app.
           </p>
         </section>
       </div>

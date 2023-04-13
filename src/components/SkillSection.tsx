@@ -30,7 +30,7 @@ export const SkillSection = () => {
         >
           <motion.div
             whileHover={{ scale: 1.1 }}
-            transition={{ delay: 0.05, ease: "easeOut" }}
+            transition={{ delay: 0.05, ease: "easeInOut" }}
           >
             {icon}
           </motion.div>
