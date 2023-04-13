@@ -6,7 +6,7 @@ export const ProjectGrid = () => {
   return (
     <section className="flex flex-col gap-12">
       <HoverText text={["Projects", "I", "have", "been", "working", "on:"]} />
-      <div className="flex gap-6">
+      <div className="flex flex-col gap-8 md:flex-row md:gap-20">
         <ProjectCard
           title="Weather App"
           text="A simple and beautiful weather app"

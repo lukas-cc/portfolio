@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="flex w-full flex-col justify-center gap-20">
       <div className="mt-8 flex w-full justify-center">
-        <section className="flex w-1/2 flex-col text-center text-xl">
+        <section className="mx-4 flex w-auto flex-col text-center text-xl md:mx-0 md:w-1/2">
           <h1 className="mb-8 text-6xl">About me</h1>
           <p>
             Hey! I am Lukas. I am 23 years old and I currently live in Hamburg,

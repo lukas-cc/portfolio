@@ -19,7 +19,7 @@ export const SkillSection = () => {
   ];
 
   return (
-    <div className="mx-8 flex flex-wrap items-center justify-around gap-8 md:justify-between md:gap-16">
+    <div className="mx-8 flex flex-wrap items-center justify-around gap-8 md:flex-row md:justify-between md:gap-16">
       {iconArray.map((icon, index) => (
         <motion.div
           key={index}
