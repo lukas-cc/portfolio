@@ -8,6 +8,7 @@ import {
   MuiIcon,
   TailwindIcon,
 } from "./icons";
+import { HoverText } from "./HoverText";
 
 export const SkillSection = () => {
   const iconArray = [
@@ -19,23 +20,26 @@ export const SkillSection = () => {
   ];
 
   return (
-    <div className="mx-8 flex flex-wrap items-center justify-around gap-8 md:flex-row md:justify-between md:gap-16">
-      {iconArray.map((icon, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: index * 0.2, duration: 1.2, ease: "easeOut" }}
-        >
+    <div>
+      <HoverText text={["My", "current", "tech", "stack:"]} />
+      <div className="mx-8 flex flex-wrap items-center justify-around gap-8 md:flex-row md:justify-between md:gap-16">
+        {iconArray.map((icon, index) => (
           <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{ delay: 0.05, ease: "easeInOut" }}
+            key={index}
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.2, duration: 1.2, ease: "easeOut" }}
           >
-            {icon}
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              transition={{ delay: 0.05, ease: "easeInOut" }}
+            >
+              {icon}
+            </motion.div>
           </motion.div>
-        </motion.div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

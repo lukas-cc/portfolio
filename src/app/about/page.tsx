@@ -14,10 +14,10 @@ const About = () => {
             And I <b className="text-accent">love</b> it.
           </p>
           <p>
-            In addition to functional aspects of an app, I also put effort to
-            the look and feel of that app. This means that I strive to create an
-            aesthetically pleasing and intuitive design that enhances the
-            overall user experience and satisfaction with the app.
+            In addition to functional aspects of an app, I also put a lot of
+            effort to the look and feel of that app. This means that I strive to
+            create an aesthetically pleasing and intuitive design that enhances
+            the overall user experience and satisfaction with the app.
           </p>
         </section>
       </div>
