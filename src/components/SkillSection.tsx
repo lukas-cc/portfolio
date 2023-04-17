@@ -22,7 +22,7 @@ export const SkillSection = () => {
   return (
     <div>
       <HoverText text={["My", "current", "tech", "stack:"]} />
-      <div className="mx-8 flex flex-wrap items-center justify-around gap-8 md:flex-row md:justify-between md:gap-16">
+      <div className="mx-8 mt-12 flex flex-wrap items-center justify-around gap-8 md:mt-0 md:flex-row md:justify-between md:gap-16">
         {iconArray.map((icon, index) => (
           <motion.div
             key={index}

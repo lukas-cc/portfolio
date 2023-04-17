@@ -22,7 +22,7 @@ export const ProjectGrid = () => {
         </ProjectCard>
         <ProjectCard
           title="Immo Search"
-          text="Look up properties"
+          text="A demo project to look up properties"
           href="https://immo-search.vercel.app/"
         >
           <Image
