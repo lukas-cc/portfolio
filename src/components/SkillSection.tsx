@@ -8,7 +8,7 @@ import {
   MuiIcon,
   TailwindIcon,
 } from "./icons";
-import { HoverText } from "./HoverText";
+import { HoverText } from "./server";
 
 export const SkillSection = () => {
   const iconArray = [

@@ -39,7 +39,6 @@ const Home = () => {
         />
         <div className="mt-20 flex flex-col gap-20">
           <SkillSection />
-
           <ProjectGrid />
         </div>
       </main>

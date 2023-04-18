@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { GithubIcon, TwitterIcon } from "./icons";
 
 export const SocialLinks = () => {

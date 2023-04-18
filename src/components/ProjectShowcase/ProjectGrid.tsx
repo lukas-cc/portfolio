@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ProjectCard } from "./ProjectCard";
-import { HoverText } from "../HoverText";
+import { HoverText } from "../server";
 
 export const ProjectGrid = () => {
   return (
