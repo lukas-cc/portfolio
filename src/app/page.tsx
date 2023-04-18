@@ -4,8 +4,8 @@ import { SkillSection, TypingAnimation } from "../components/client";
 const Home = () => {
   return (
     <div className="flex flex-col">
-      <main className="mb-auto mt-20 flex flex-col items-center justify-center gap-4">
-        <h1 className="bg-gradient-to-r from-warning to-primary bg-clip-text text-9xl font-bold text-transparent transition delay-100 md:text-[180px]">
+      <main className="mb-8 mt-20 flex flex-col items-center justify-center gap-4">
+        <h1 className="bg-gradient-to-r from-warning to-primary bg-clip-text text-9xl font-bold text-transparent md:text-[180px]">
           Hello
         </h1>
         <TypingAnimation />
