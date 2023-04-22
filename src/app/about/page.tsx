@@ -2,7 +2,7 @@ import { SocialLinks } from "../../components/server";
 
 const About = () => {
   return (
-    <div className="flex flex-col justify-center gap-20">
+    <div className="mb-8 flex flex-col justify-center gap-20">
       <div className="mt-8 flex justify-center">
         <section className="mx-6 flex flex-col text-center text-xl md:mx-0 md:w-1/2">
           <h1 className="mb-8 text-6xl">About me</h1>
