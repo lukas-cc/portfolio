@@ -4,7 +4,7 @@ import { HoverText } from "../server";
 
 export const ProjectGrid = () => {
   return (
-    <section className="flex flex-col gap-12">
+    <section className="flex flex-col gap-12 md:px-8">
       <HoverText text={["Projects", "I", "have", "been", "working", "on:"]} />
       <div className="flex flex-col gap-8 md:flex-row md:gap-20">
         <ProjectCard

@@ -1,6 +1,5 @@
 import "../../styles/globals.css";
 import { Quicksand } from "next/font/google";
-import Link from "next/link";
 import { Header } from "../components/Header";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
