@@ -7,7 +7,7 @@ const About = () => {
         <section className="mx-6 flex flex-col text-center text-xl md:mx-0 md:w-1/2">
           <h1 className="mb-8 text-6xl">About me</h1>
           <p>
-            Hey! I am Lukas. I am 23 years old and I currently live in Hamburg,
+            Hey! I am Lukas. I am 24 years old and I currently live in Hamburg,
             Germany. I mostly do frontend stuff for the web.
           </p>
           <p>
