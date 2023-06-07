@@ -10,9 +10,7 @@ const About = () => {
             Hey! I am Lukas. I am 24 years old and I currently live in Hamburg,
             Germany. I mostly do frontend stuff for the web.
           </p>
-          <p>
-            And I <b className="text-accent">love</b> it.
-          </p>
+          <p>And I love it.</p>
           <p>
             In addition to functional aspects of an app, I also put a lot of
             effort to the look and feel of that app. This means that I strive to
