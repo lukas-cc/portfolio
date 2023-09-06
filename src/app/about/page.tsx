@@ -1,4 +1,4 @@
-import { SocialLinks } from "../../components/server";
+import { SocialLinks } from "../../components/SocialLinks";
 
 const About = () => {
   return (

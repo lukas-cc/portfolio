@@ -11,21 +11,19 @@ module.exports = {
         theme: {
           primary: "#67e8f9",
 
-          secondary: "#fde047",
+          secondary: "#828df8",
 
-          accent: "#F471B5",
+          accent: "#f471b5",
 
-          neutral: "#1E293B",
+          neutral: "#222222",
 
-          "base-100": "#111827",
-
-          "base-200": "#0f1421",
+          "base-100": "#111010",
 
           info: "#0CA5E9",
 
           success: "#2DD4BF",
 
-          warning: "#fb923c",
+          warning: "#F4BF50",
 
           error: "#FB7085",
         },

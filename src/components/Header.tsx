@@ -17,7 +17,7 @@ export const Header = () => {
   const currentPath = usePathname();
 
   return (
-    <header className="sticky top-0 bg-base-100 py-5">
+    <header className="sticky top-0 py-5 backdrop-blur-sm">
       <nav>
         <ul className="flex flex-wrap justify-center gap-12 text-2xl md:mr-10 md:justify-end md:gap-20 ">
           {Object.entries(navItems).map(([path, { name }]) => {
@@ -27,7 +27,7 @@ export const Header = () => {
                   className={
                     currentPath === path
                       ? "relative cursor-pointer px-3 py-1"
-                      : "delay-50 relative cursor-pointer px-3 py-1 transition ease-in-out hover:text-secondary"
+                      : "delay-50 relative cursor-pointer px-3 py-1 transition ease-in-out hover:text-primary"
                   }
                 >
                   {name}
@@ -35,7 +35,7 @@ export const Header = () => {
                     <motion.div
                       layoutId="header"
                       transition={{ type: "spring", duration: 0.6 }}
-                      className="absolute inset-0 z-[-1] rounded-md bg-neutral"
+                      className="absolute inset-0 z-[-1] rounded-md bg-white/5"
                     />
                   ) : null}
                 </span>
