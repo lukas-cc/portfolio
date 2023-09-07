@@ -11,14 +11,14 @@ export const ProjectCard = ({
   href,
 }: ProjectCardProps) => {
   return (
-    <div className="card card-compact mx-8 bg-base-200 shadow-xl md:mx-0">
+    <div className="card card-compact mx-8 bg-base-200 md:mx-0 rounded-md">
       <figure>{children}</figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p>{text}</p>
         <div className="card-actions justify-end">
           <a
-            className="btn-primary btn"
+            className="btn-primary btn btn-sm"
             href={href}
             target="_blank"
             rel="noreferrer"

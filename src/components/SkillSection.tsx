@@ -8,7 +8,7 @@ export const SkillSection = () => {
     <TypescriptIcon width={80} height={80} key={0} />,
     <ReactIcon width={80} height={80} key={1} />,
     <NextIcon width={180} height={80} key={2} />,
-    <TailwindIcon width={80} height={80} key={4} />,
+    <TailwindIcon width={80} height={80} key={3} />,
   ];
 
   return (
@@ -21,7 +21,7 @@ export const SkillSection = () => {
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: index, duration: 1.2, ease: "easeOut" }}
+            transition={{ delay: index * 0.8, duration: 1.2, ease: "easeOut" }}
             className=""
           >
             <motion.div
