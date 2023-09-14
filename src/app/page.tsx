@@ -1,11 +1,10 @@
-import { TypeAnimation } from "react-type-animation";
 import { ProjectGrid } from "../components/ProjectShowcase/ProjectGrid";
 import { SkillSection } from "../components/SkillSection";
 import { TypingAnimation } from "../components/TypingAnimation";
 
 const Home = () => {
   return (
-    <main className="mx-4 mb-8 mt-20 flex flex-col items-center justify-center gap-4">
+    <main className="md:p-8 p-6 pt-20 flex flex-col items-center justify-center gap-4">
       <TypingAnimation />
       <p className="text-center text-2xl">
         A frontend software engineer. Doing my masters in computer science at

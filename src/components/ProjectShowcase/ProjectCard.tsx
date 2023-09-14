@@ -11,8 +11,8 @@ export const ProjectCard = ({
   href,
 }: ProjectCardProps) => {
   return (
-    <div className="card card-compact mx-8 bg-base-200 md:mx-0 rounded-md">
-      <figure>{children}</figure>
+    <div className="card card-compact border border-primary/80 mx-8 bg-base-100 md:mx-0 rounded-md md:h-96 md:w-96">
+      <figure className="relative">{children}</figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p>{text}</p>

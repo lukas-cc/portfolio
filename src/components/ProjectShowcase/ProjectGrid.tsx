@@ -8,15 +8,17 @@ export const ProjectGrid = () => {
       <div className="flex flex-col gap-8 md:flex-row md:gap-20">
         <ProjectCard
           title="Weather App"
-          text="A simple and beautiful weather app"
+          text="A minimalistic and beautiful weather app"
           href="https://weather-app-lukas-cc.vercel.app/"
         >
           <Image
             src="/weather-app.png"
             alt="weather app"
-            width={600}
-            height={600}
             priority
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-full h-auto"
           />
         </ProjectCard>
         <ProjectCard
@@ -27,9 +29,11 @@ export const ProjectGrid = () => {
           <Image
             src="/spotify.png"
             alt="spotify"
-            width={600}
-            height={600}
             priority
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-full h-auto"
           />
         </ProjectCard>
       </div>

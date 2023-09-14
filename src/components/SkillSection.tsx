@@ -21,7 +21,7 @@ export const SkillSection = () => {
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: index * 0.8, duration: 1.2, ease: "easeOut" }}
+            transition={{ delay: index * 0.6, duration: 1.5, ease: "easeOut" }}
             className=""
           >
             <motion.div
