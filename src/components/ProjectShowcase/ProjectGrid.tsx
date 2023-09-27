@@ -3,9 +3,9 @@ import { ProjectCard } from "./ProjectCard";
 
 export const ProjectGrid = () => {
   return (
-    <section className="flex flex-col gap-12 md:px-8">
+    <section className="flex flex-col items-center gap-12 p-8">
       <p className="text-center text-2xl">My personal projects:</p>
-      <div className="flex flex-col gap-8 md:flex-row md:gap-20">
+      <div className="flex flex-col gap-20 md:flex-row">
         <ProjectCard
           title="Weather App"
           text="A minimalistic and beautiful weather app"

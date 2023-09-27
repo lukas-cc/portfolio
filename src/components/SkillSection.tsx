@@ -1,20 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { NextIcon, ReactIcon, TypescriptIcon, TailwindIcon } from "./icons";
+import {
+  NextIcon,
+  ReactIcon,
+  TypescriptIcon,
+  TailwindIcon,
+  MuiIcon,
+} from "./icons";
 
 export const SkillSection = () => {
   const iconArray = [
     <TypescriptIcon width={80} height={80} key={0} />,
     <ReactIcon width={80} height={80} key={1} />,
-    <NextIcon width={180} height={80} key={2} />,
+    <NextIcon width={160} height={80} key={2} />,
     <TailwindIcon width={80} height={80} key={3} />,
+    <MuiIcon width={80} height={80} key={4} />,
   ];
 
   return (
-    <div>
-      <p className="mb-4 text-center text-2xl">My current tech stack:</p>
-      <div className="mx-16 mt-16 flex flex-wrap items-center justify-around gap-8 md:flex-row md:justify-between">
+    <div className="p-8">
+      <p className="pb-4 text-center text-2xl">My current tech stack:</p>
+      <div className="pt-16 flex flex-wrap justify-center gap-10 lg:gap-20 w-full">
         {iconArray.map((icon, index) => (
           <motion.div
             key={index}
@@ -22,7 +29,6 @@ export const SkillSection = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.6, duration: 1.5, ease: "easeOut" }}
-            className=""
           >
             <motion.div
               whileHover={{ scale: 1.1 }}
