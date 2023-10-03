@@ -12,7 +12,7 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div className="card card-compact border border-primary/40 rounded-md flex-1">
-      <figure className="relative">{children}</figure>
+      {children}
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p>{text}</p>
