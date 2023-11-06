@@ -11,7 +11,7 @@ export const ProjectCard = ({
   href,
 }: ProjectCardProps) => {
   return (
-    <div className="card card-compact border border-primary/40 rounded-md flex-1">
+    <div className="card card-compact border border-primary/40 rounded-md flex-1 p-1">
       {children}
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
