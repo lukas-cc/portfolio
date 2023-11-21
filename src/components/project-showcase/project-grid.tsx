@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard } from "./project-card";
 
 export const ProjectGrid = () => {
   return (

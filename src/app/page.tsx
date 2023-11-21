@@ -1,6 +1,6 @@
-import { ProjectGrid } from "../components/ProjectShowcase/ProjectGrid";
-import { SkillSection } from "../components/SkillSection";
-import { TypingAnimation } from "../components/TypingAnimation";
+import { ProjectGrid } from "../components/project-showcase/project-grid";
+import { SkillSection } from "../components/skill-section";
+import { TypingAnimation } from "../components/typing-animation";
 
 const Home = () => {
   return (
