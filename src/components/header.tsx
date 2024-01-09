@@ -35,7 +35,7 @@ export const Header = () => {
                     <motion.div
                       layoutId="header"
                       transition={{ type: "spring", duration: 0.6 }}
-                      className="absolute inset-0 z-[-1] rounded-md bg-neutral/60"
+                      className="absolute inset-0 z-[-1] rounded-md bg-zinc-700/60"
                     />
                   ) : null}
                 </span>
