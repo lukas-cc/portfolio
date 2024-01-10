@@ -13,11 +13,11 @@ const navItems = {
   },
 };
 
-export const Header = () => {
+export const Footer = () => {
   const currentPath = usePathname();
 
   return (
-    <header className="sticky top-0 hidden py-5 backdrop-blur-sm md:visible">
+    <header className="fixed bottom-0 w-full py-5 backdrop-blur-sm md:top-0 md:hidden">
       <nav>
         <ul className="flex flex-wrap justify-center gap-12 text-2xl md:mr-10 md:justify-end md:gap-20 ">
           {Object.entries(navItems).map(([path, { name }]) => {

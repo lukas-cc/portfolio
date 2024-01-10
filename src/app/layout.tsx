@@ -1,6 +1,7 @@
 import "../../styles/globals.css";
 import { Quicksand } from "next/font/google";
 import { Header } from "../components/header";
+import { Footer } from "@/components/footer";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 export const metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -22,10 +22,10 @@ export const ProjectCard = ({
   href,
 }: ProjectCardProps) => {
   return (
-    <div className="relative group">
-      <div className="absolute -inset-0.5 bg-gradient-to-br from-primary to-pink rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+    <div className="group relative">
+      <div className="absolute -inset-0.5 rounded-xl bg-gradient-to-br from-primary to-pink opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
       <Card className="relative">
-        <CardContent className="flex md:w-[500px] md:h-[350px] w-[300px] h-[210px] items-center p-1">
+        <CardContent className="flex h-[210px] w-[300px] items-center p-1 md:h-[350px] md:w-[500px]">
           {children}
         </CardContent>
         <CardHeader>

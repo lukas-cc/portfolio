@@ -21,7 +21,7 @@ export const SkillSection = () => {
   return (
     <div className="p-8">
       <p className="pb-4 text-center text-2xl">My current tech stack:</p>
-      <div className="pt-16 flex flex-wrap justify-center gap-10 lg:gap-20 w-full">
+      <div className="flex w-full flex-wrap justify-center gap-10 pt-16 lg:gap-20">
         {iconArray.map((icon, index) => (
           <motion.div
             key={index}

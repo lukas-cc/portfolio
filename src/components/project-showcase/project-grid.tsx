@@ -18,7 +18,7 @@ export const ProjectGrid = () => {
             width="0"
             height="0"
             sizes="100vw"
-            className=" w-full h-full object-cover rounded-lg"
+            className=" h-full w-full rounded-lg object-cover"
           />
         </ProjectCard>
         <ProjectCard
@@ -33,7 +33,7 @@ export const ProjectGrid = () => {
             width="0"
             height="0"
             sizes="100vw"
-            className="w-full h-full object-cover rounded-lg"
+            className="h-full w-full rounded-lg object-cover"
           />
         </ProjectCard>
       </div>
