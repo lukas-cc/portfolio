@@ -13,7 +13,7 @@ const Home = () => {
       <p className="text-center text-2xl">
         Currently working as a working student at E&V Technology.
       </p>
-      <div className="mt-20 flex flex-col gap-20">
+      <div className="flex flex-col gap-20 pb-20 pt-20 md:pb-4">
         <SkillSection />
         <ProjectGrid />
       </div>
