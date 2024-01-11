@@ -4,6 +4,7 @@ import { Header } from "../components/header";
 import { Footer } from "@/components/footer";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
+
 export const metadata = {
   title: "Lukas Ciepielowski",
   description: "Welcome to my personal portfolio website",

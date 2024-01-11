@@ -25,7 +25,7 @@ export const ProjectCard = ({
     <div className="group relative">
       <div className="absolute -inset-0.5 rounded-xl bg-gradient-to-br from-primary to-pink opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
       <Card className="relative">
-        <CardContent className="flex h-[210px] w-[300px] items-center p-1 md:h-[350px] md:w-[500px]">
+        <CardContent className="flex h-[210px] w-[300px] items-center p-1 md:h-[250px] md:w-[400px]">
           {children}
         </CardContent>
         <CardHeader>
