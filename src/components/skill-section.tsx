@@ -25,16 +25,16 @@ export const SkillSection = () => {
       <div className="flex w-full flex-wrap justify-center gap-10 pt-16 lg:gap-12">
         <Card
           icon={iconArray[0]}
-          text="For typesafety and better developer experience"
+          text="For typesafety and better developer experience."
         />
-        <Card icon={iconArray[1]} text="My preferred frontend framework" />
+        <Card icon={iconArray[1]} text="My preferred frontend framework." />
         <Card
           icon={iconArray[2]}
           text="Fullstack web at its best. Enables me to use react server components."
         />
         <Card
           icon={iconArray[3]}
-          text="My go to styling solution, by far the most enjoyable"
+          text="My go to styling solution, by far the most enjoyable."
         />
         <Card icon={iconArray[4]} text="Only at work..." />
       </div>
