@@ -8,7 +8,7 @@ const About = () => {
           <h1 className="mb-8 text-6xl">About me</h1>
           <p>
             Hey! I am Lukas. I am 24 years old and I currently live in Hamburg,
-            Germany. I mostly do frontend stuff for the web.
+            Germany. I mostly do stuff for the web.
           </p>
           <p>And I love it.</p>
           <p>
