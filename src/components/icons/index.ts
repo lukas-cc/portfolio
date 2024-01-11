@@ -5,3 +5,4 @@ export * from "./mui-icon";
 export * from "./tailwind-icon";
 export * from "./github-icon";
 export * from "./x-icon";
+export * from "./linkedin-icon";

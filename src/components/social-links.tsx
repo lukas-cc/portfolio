@@ -1,4 +1,4 @@
-import { GithubIcon, TwitterIcon } from "./icons";
+import { GithubIcon, LinkedInIcon, TwitterIcon } from "./icons";
 import { Button } from "./ui/button";
 
 export const SocialLinks = () => {
@@ -22,6 +22,15 @@ export const SocialLinks = () => {
             href="https://twitter.com/just_scepta"
           >
             <TwitterIcon width={20} height={20} />
+          </a>
+        </Button>
+        <Button variant="ghost" size="icon">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/lukas-ciepielowski-ba3024293/"
+          >
+            <LinkedInIcon width={20} height={20} />
           </a>
         </Button>
       </div>

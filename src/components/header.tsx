@@ -17,12 +17,12 @@ export const Header = () => {
   const currentPath = usePathname();
 
   return (
-    <header className="sticky top-0 hidden py-5 backdrop-blur-sm md:visible">
+    <header className="sticky top-0 hidden w-full py-5 backdrop-blur-sm md:block">
       <nav>
         <ul className="flex flex-wrap justify-center gap-12 text-2xl md:mr-10 md:justify-end md:gap-20 ">
           {Object.entries(navItems).map(([path, { name }]) => {
             return (
-              <Link key={path} href={path} className="relative">
+              <Link key={path} href={path}>
                 <span
                   className={
                     currentPath === path
