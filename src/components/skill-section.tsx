@@ -8,6 +8,7 @@ import {
   TailwindIcon,
   MuiIcon,
 } from "./icons";
+import { Card } from "./card";
 
 export const SkillSection = () => {
   const iconArray = [
@@ -19,26 +20,15 @@ export const SkillSection = () => {
   ];
 
   return (
-    <div className="p-8">
+    <section className="p-8">
       <p className="pb-4 text-center text-2xl">My current tech stack:</p>
-      <div className="flex w-full flex-wrap justify-center gap-10 pt-16 lg:gap-20">
-        {iconArray.map((icon, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.6, duration: 1.5, ease: "easeOut" }}
-          >
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              transition={{ delay: 0.05, ease: "easeInOut" }}
-            >
-              {icon}
-            </motion.div>
-          </motion.div>
-        ))}
+      <div className="flex w-full flex-wrap justify-center gap-10 pt-16 lg:gap-12">
+        <Card title="Typescript" icon={iconArray[0]} />
+        <Card title="React" icon={iconArray[1]} />
+        <Card title="Next.js" icon={iconArray[2]} />
+        <Card title="TailwindCSS" icon={iconArray[3]} />
+        <Card title="Material UI" icon={iconArray[4]} />
       </div>
-    </div>
+    </section>
   );
 };
