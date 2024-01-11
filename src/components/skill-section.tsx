@@ -23,11 +23,20 @@ export const SkillSection = () => {
     <section className="p-8">
       <p className="pb-4 text-center text-2xl">My current tech stack:</p>
       <div className="flex w-full flex-wrap justify-center gap-10 pt-16 lg:gap-12">
-        <Card title="Typescript" icon={iconArray[0]} />
-        <Card title="React" icon={iconArray[1]} />
-        <Card title="Next.js" icon={iconArray[2]} />
-        <Card title="TailwindCSS" icon={iconArray[3]} />
-        <Card title="Material UI" icon={iconArray[4]} />
+        <Card
+          icon={iconArray[0]}
+          text="For typesafety and better developer experience"
+        />
+        <Card icon={iconArray[1]} text="My preferred frontend framework" />
+        <Card
+          icon={iconArray[2]}
+          text="Fullstack web at its best. Enables me to use react server components."
+        />
+        <Card
+          icon={iconArray[3]}
+          text="My go to styling solution, by far the most enjoyable"
+        />
+        <Card icon={iconArray[4]} text="Only at work..." />
       </div>
     </section>
   );
