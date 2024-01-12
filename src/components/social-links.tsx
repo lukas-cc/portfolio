@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export const SocialLinks = () => {
   return (
-    <section className="flex flex-col items-center gap-8">
+    <section className="flex flex-col items-center gap-8 pb-20">
       <p className="text-2xl">Socials</p>
       <div className="flex justify-center gap-12 md:w-1/3 md:gap-8">
         <Button variant="ghost" size="icon">
