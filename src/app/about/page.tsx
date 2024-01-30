@@ -13,7 +13,7 @@ const About = () => {
           <p>And I love it.</p>
           <p>
             In addition to an app&apos;s functionality, I pay close attention to
-            its visual appeal. I aim to create an eye-catching app that enhances
+            its visual appeal. I try to create an eye-catching app that enhances
             the overall user experience.
           </p>
         </section>

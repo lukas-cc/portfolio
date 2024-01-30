@@ -30,7 +30,7 @@ export const SkillSection = () => {
         <Card icon={iconArray[1]} text="My preferred frontend framework." />
         <Card
           icon={iconArray[2]}
-          text="Fullstack web at its best. Enables me to use react server components."
+          text="Fullstack web at its best - makes building fullstack apps a breeze."
         />
         <Card
           icon={iconArray[3]}
