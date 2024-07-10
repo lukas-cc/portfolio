@@ -2,7 +2,7 @@ import { ProjectGrid } from "../components/project-showcase/project-grid";
 import { SkillSection } from "../components/skill-section";
 import { TypingAnimation } from "../components/typing-animation";
 
-const Home = () => {
+export default function HomePage() {
   return (
     <main className="flex flex-col items-center justify-center gap-4 p-6 pt-20 md:p-8">
       <TypingAnimation />
@@ -21,6 +21,4 @@ const Home = () => {
       </div>
     </main>
   );
-};
-
-export default Home;
+}
