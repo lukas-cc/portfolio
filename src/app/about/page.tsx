@@ -8,13 +8,14 @@ export default function AboutPage() {
           <h1 className="mb-8 text-6xl">About me</h1>
           <p>
             Hey! I am Lukas. I am 25 years old and I currently live in Hamburg,
-            Germany. I mostly do stuff for the web.
+            Germany. I have a masters degree in Informatics.
           </p>
-          <p>And I love it.</p>
+          <br />
           <p>
-            In addition to an app&apos;s functionality, I pay close attention to
-            its visual appeal. I try to create an eye-catching app that enhances
-            the overall user experience.
+            I mostly do stuff for the web. In addition to an app&apos;s
+            functionality, I pay close attention to its visual appeal. I try to
+            create an eye-catching app that enhances the overall user
+            experience.
           </p>
         </section>
       </div>

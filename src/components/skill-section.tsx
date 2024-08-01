@@ -6,6 +6,7 @@ import {
   TypescriptIcon,
   TailwindIcon,
   MuiIcon,
+  NodeJsIcon,
 } from "./icons";
 import { Card } from "./card";
 
@@ -14,8 +15,9 @@ export const SkillSection = () => {
     <TypescriptIcon width={80} height={80} key={0} />,
     <ReactIcon width={80} height={80} key={1} />,
     <NextIcon width={160} height={80} key={2} />,
-    <TailwindIcon width={80} height={80} key={3} />,
-    <MuiIcon width={80} height={80} key={4} />,
+    <NodeJsIcon width={160} height={80} key={3} />,
+    <TailwindIcon width={80} height={80} key={4} />,
+    <MuiIcon width={80} height={80} key={5} />,
   ];
 
   return (
@@ -33,9 +35,16 @@ export const SkillSection = () => {
         />
         <Card
           icon={iconArray[3]}
+          text="Using one language for the whole stack."
+        />
+        <Card
+          icon={iconArray[4]}
           text="My go to styling solution, by far the most enjoyable."
         />
-        <Card icon={iconArray[4]} text="Only at work..." />
+        <Card
+          icon={iconArray[5]}
+          text="Ready-to-use components. Only at work..."
+        />
       </div>
     </section>
   );
