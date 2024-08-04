@@ -12,7 +12,7 @@ export const SocialLinks = () => {
             target="_blank"
             href="https://github.com/lukas-cc"
           >
-            <GithubIcon width={20} height={20} />
+            <GithubIcon width={25} height={25} />
           </a>
         </Button>
         <Button variant="ghost" size="icon">
@@ -21,7 +21,7 @@ export const SocialLinks = () => {
             target="_blank"
             href="https://twitter.com/just_scepta"
           >
-            <TwitterIcon width={20} height={20} />
+            <TwitterIcon width={25} height={25} />
           </a>
         </Button>
         <Button variant="ghost" size="icon">
@@ -30,7 +30,7 @@ export const SocialLinks = () => {
             target="_blank"
             href="https://www.linkedin.com/in/lukas-ciepielowski-ba3024293/"
           >
-            <LinkedInIcon width={20} height={20} />
+            <LinkedInIcon width={25} height={25} />
           </a>
         </Button>
       </div>

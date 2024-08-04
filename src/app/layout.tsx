@@ -9,7 +9,7 @@ const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Lukas Ciepielowski",
-  description: "Welcome to my personal portfolio website",
+  description: "Welcome to my personal portfolio",
   icons: {
     icon: "/my-logo.svg",
   },

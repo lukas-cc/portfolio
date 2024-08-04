@@ -22,8 +22,8 @@ export const SkillSection = () => {
 
   return (
     <section className="p-8">
-      <p className="pb-4 text-center text-2xl">My current tech stack:</p>
-      <div className="flex w-full flex-wrap justify-center gap-10 pt-16 lg:gap-12">
+      <p className="pb-4 text-center text-2xl">My tech stack:</p>
+      <div className="flex w-full flex-wrap justify-center gap-10 pt-16 md:gap-12 md:px-40">
         <Card
           icon={iconArray[0]}
           text="For typesafety and better developer experience."
