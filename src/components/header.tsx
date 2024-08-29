@@ -17,9 +17,9 @@ export const Header = () => {
   const currentPath = usePathname();
 
   return (
-    <header className="sticky top-0 hidden w-full py-5 backdrop-blur-sm md:block">
+    <header className="z-50 hidden w-full py-5 md:block">
       <nav>
-        <ul className="flex flex-wrap justify-center gap-12 text-2xl md:mr-10 md:justify-end md:gap-20 ">
+        <ul className="flex flex-wrap justify-center gap-12 text-2xl md:mr-10 md:justify-end md:gap-20">
           {Object.entries(navItems).map(([path, { name }]) => {
             return (
               <Link key={path} href={path}>

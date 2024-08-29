@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={quicksand.className}>
-      <body>
+      <body className="absolute inset-0 z-50 min-h-screen w-full bg-[radial-gradient(#2d2e2e_1px,transparent_1px)] [background-size:40px_40px]">
         <Header />
         {children}
         <Analytics />
