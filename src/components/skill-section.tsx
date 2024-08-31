@@ -43,7 +43,7 @@ export const SkillSection = () => {
         />
         <Card
           icon={iconArray[5]}
-          text="Ready-to-use components. Only at work..."
+          text="Ready-to-use components. Primarly used at work,"
         />
       </div>
     </section>
