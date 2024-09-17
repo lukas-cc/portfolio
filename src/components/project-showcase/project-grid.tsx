@@ -38,7 +38,7 @@ export const ProjectGrid = () => {
         </ProjectCard>
         <ProjectCard
           title="Stock.io"
-          text="Browse through stock market data"
+          text="Browse through stock market data (wip 🏗️)"
           href="https://stockio.vercel.app/"
         >
           <Image
