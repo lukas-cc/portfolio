@@ -13,7 +13,11 @@ export const Card = ({
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <div onClick={() => setIsFlipped(!isFlipped)} style={{ perspective: 1000 }}>
+    <div
+      onClick={() => setIsFlipped(!isFlipped)}
+      style={{ perspective: 1000 }}
+      className="h-44 w-52"
+    >
       <motion.div
         initial={false}
         animate={{
