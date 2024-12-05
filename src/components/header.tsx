@@ -19,7 +19,7 @@ export const Header = () => {
   return (
     <header className="z-50 hidden w-full py-5 md:block">
       <nav>
-        <div className="flex flex-wrap justify-center gap-12 text-2xl md:mr-10 md:justify-end md:gap-20">
+        <div className="flex flex-wrap justify-center gap-12 text-2xl md:mr-10 md:justify-end md:gap-10">
           {Object.entries(navItems).map(([path, { name }]) => {
             return (
               <Link key={path} href={path}>
