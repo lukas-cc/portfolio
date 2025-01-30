@@ -7,8 +7,20 @@ export default function AboutPage() {
         <section className="mx-6 flex flex-col text-center text-xl md:mx-0 md:w-1/2">
           <h1 className="mb-8 text-6xl">About me</h1>
           <p>
-            Hey! I am Lukas. I am 25 years old and currently live in Hamburg,
-            Germany. I have a masters degree in Informatics.
+            Hi there! I'm Lukas, a software developer based in Hamburg, Germany.
+          </p>
+          <p>
+            I hold a Master's degree in Informatics from the University of
+            Hamburg (
+            <a
+              href="https://edoc.sub.uni-hamburg.de/informatik/volltexte/2024/278/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              read my thesis here
+            </a>
+            ).
           </p>
           <br />
           <p>

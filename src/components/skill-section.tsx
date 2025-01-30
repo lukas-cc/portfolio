@@ -55,7 +55,7 @@ export const SkillSection = () => {
         <div className="flex w-full justify-center">
           <Card
             icon={iconArray[5]}
-            text="Ready-to-use components. Primarly used at work,"
+            text="Ready-to-use components. Primarly used at work."
           />
         </div>
       </div>
