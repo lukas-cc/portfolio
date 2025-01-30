@@ -7,10 +7,11 @@ export default function AboutPage() {
         <section className="mx-6 flex flex-col text-center text-xl md:mx-0 md:w-1/2">
           <h1 className="mb-8 text-6xl">About me</h1>
           <p>
-            Hi there! I'm Lukas, a software developer based in Hamburg, Germany.
+            Hi there! I&apos;m Lukas, a software developer based in Hamburg,
+            Germany.
           </p>
           <p>
-            I hold a Master's degree in Informatics from the University of
+            I hold a Master&apos;s degree in Informatics from the University of
             Hamburg (
             <a
               href="https://edoc.sub.uni-hamburg.de/informatik/volltexte/2024/278/"
