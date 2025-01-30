@@ -25,7 +25,7 @@ export const Card = ({
           transition: { duration: 0.8 },
         }}
         style={{ transformStyle: "preserve-3d" }}
-        className="relative flex h-44 w-52 cursor-pointer items-center justify-center rounded-xl bg-gradient-to-r from-primary to-secondary p-1"
+        className="relative flex h-44 w-52 cursor-pointer items-center justify-center rounded-xl bg-linear-to-r from-primary to-secondary p-1"
       >
         <motion.div
           className="absolute flex h-[95%] w-[95%] items-center justify-center gap-8 rounded-lg bg-background p-4"

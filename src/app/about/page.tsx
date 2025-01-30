@@ -3,7 +3,7 @@ import { SocialLinks } from "../../components/social-links";
 export default function AboutPage() {
   return (
     <div className="flex flex-col justify-center gap-20 pb-8">
-      <div className="flex flex-grow justify-center pt-8">
+      <div className="flex grow justify-center pt-8">
         <section className="mx-6 flex flex-col text-center text-xl md:mx-0 md:w-1/2">
           <h1 className="mb-8 text-6xl">About me</h1>
           <p>
