@@ -7,7 +7,7 @@ export default function AboutPage() {
         <section className="mx-6 flex flex-col text-center text-xl md:mx-0 md:w-1/2">
           <h1 className="mb-8 text-6xl">About me</h1>
           <p>
-            Hi there! I&apos;m Lukas, a software developer based in Hamburg,
+            Hi there! I&apos;m Lukas, a software engineer based in Hamburg,
             Germany.
           </p>
           <p>
