@@ -2,8 +2,6 @@ import "../../styles/globals.css";
 import { Quicksand } from "next/font/google";
 import { Header } from "../components/header";
 import { Footer } from "@/components/footer";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 
@@ -25,8 +23,6 @@ export default function RootLayout({
       <body className="absolute inset-0 z-50 min-h-screen w-full bg-[radial-gradient(#2d2e2e_1px,transparent_1px)] [background-size:40px_40px]">
         <Header />
         {children}
-        <Analytics />
-        <SpeedInsights />
         <Footer />
       </body>
     </html>
