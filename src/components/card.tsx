@@ -19,22 +19,22 @@ export const Card = ({
       className="h-44 w-52"
     >
       <motion.div
-        initial={false}
+        initial={{ rotateY: 360 }}
         animate={{
           rotateY: isFlipped ? 180 : 360,
           transition: { duration: 0.8 },
         }}
         style={{ transformStyle: "preserve-3d" }}
-        className="relative flex h-44 w-52 cursor-pointer items-center justify-center rounded-xl bg-linear-to-r from-primary to-secondary p-1"
+        className="from-primary to-secondary relative flex h-44 w-52 cursor-pointer items-center justify-center rounded-xl bg-linear-to-r p-1"
       >
         <motion.div
-          className="absolute flex h-[95%] w-[95%] items-center justify-center gap-8 rounded-lg bg-background p-4"
+          className="bg-background absolute flex h-[95%] w-[95%] items-center justify-center gap-8 rounded-lg p-4"
           style={{ backfaceVisibility: "hidden" }}
         >
           {icon}
         </motion.div>
         <motion.div
-          className="absolute flex h-[95%] w-[95%] items-center justify-center gap-8 rounded-lg bg-background p-4"
+          className="bg-background absolute flex h-[95%] w-[95%] items-center justify-center gap-8 rounded-lg p-4"
           style={{
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
