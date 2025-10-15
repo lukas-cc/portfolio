@@ -15,8 +15,12 @@ export const Card = ({
   return (
     <div
       onClick={() => setIsFlipped(!isFlipped)}
-      style={{ perspective: 1000 }}
       className="h-44 w-52"
+      style={{
+        perspective: 1000,
+        contain: "layout style paint",
+        willChange: "transform",
+      }}
     >
       <motion.div
         initial={{ rotateY: 360 }}
@@ -25,7 +29,7 @@ export const Card = ({
           transition: { duration: 0.8 },
         }}
         style={{ transformStyle: "preserve-3d" }}
-        className="from-primary to-secondary relative flex h-44 w-52 cursor-pointer items-center justify-center rounded-xl bg-linear-to-r p-1"
+        className="from-primary to-secondary relative flex h-44 w-52 cursor-pointer items-center justify-center rounded-xl bg-gradient-to-r p-1"
       >
         <motion.div
           className="bg-background absolute flex h-[95%] w-[95%] items-center justify-center gap-8 rounded-lg p-4"
