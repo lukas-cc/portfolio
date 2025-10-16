@@ -23,7 +23,7 @@ export const SkillSection = () => {
   return (
     <section className="w-full p-8">
       <p className="pb-4 text-center text-2xl">My tech stack:</p>
-      <div className="grid auto-rows-fr grid-cols-1 place-items-center gap-10 pt-16 md:grid-cols-2 md:px-36 lg:grid-cols-3">
+      <div className="grid w-full auto-rows-fr grid-cols-1 place-items-center gap-10 pt-16 md:grid-cols-2 md:px-36 lg:grid-cols-3">
         <Card
           icon={iconArray[0]}
           text="For typesafety and better developer experience."

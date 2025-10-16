@@ -18,12 +18,10 @@ export const Card = ({
       className="h-44 w-52"
       style={{
         perspective: 1000,
-        contain: "layout style paint",
-        willChange: "transform",
       }}
     >
       <motion.div
-        initial={{ rotateY: 360 }}
+        initial={false}
         animate={{
           rotateY: isFlipped ? 180 : 360,
           transition: { duration: 0.8 },
