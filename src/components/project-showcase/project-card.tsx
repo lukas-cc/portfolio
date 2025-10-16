@@ -24,7 +24,9 @@ export const ProjectCard = ({
   return (
     <Card className="relative flex flex-col justify-between border border-white/20">
       <CardContent className="p-1">
-        <div className="relative min-h-[270px] w-full">{children}</div>
+        <div className="relative h-[270px] w-full overflow-hidden">
+          {children}
+        </div>
       </CardContent>
       <div>
         <CardHeader>
