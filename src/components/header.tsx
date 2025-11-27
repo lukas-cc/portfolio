@@ -27,7 +27,7 @@ export const Header = () => {
                   className={
                     currentPath === path
                       ? "relative cursor-pointer px-3 py-1"
-                      : "delay-50 relative cursor-pointer px-3 py-1 transition ease-in-out hover:text-primary"
+                      : "hover:text-primary relative cursor-pointer px-3 py-1 transition delay-50 ease-in-out"
                   }
                 >
                   {name}
