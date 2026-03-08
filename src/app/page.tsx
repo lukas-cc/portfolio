@@ -1,5 +1,5 @@
 import { ProjectGrid } from "../components/project-showcase/project-grid";
-import { SkillSection } from "../components/skill-section";
+import { SkillSectionV2 } from "../components/skill-section-v2";
 import { TypingAnimation } from "../components/typing-animation";
 
 export default function HomePage() {
@@ -12,8 +12,11 @@ export default function HomePage() {
           Currently working at E&V Technology.
         </p>
       </section>
-      <div className="flex flex-col gap-20 pt-20 pb-20 md:pb-4">
-        <SkillSection />
+      <div className="flex w-full flex-col items-center justify-center gap-20 pt-20 pb-20 md:pb-4">
+        {/* <SkillSection /> */}
+
+        <SkillSectionV2 />
+
         <ProjectGrid />
       </div>
     </main>

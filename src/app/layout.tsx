@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={quicksand.className}>
-      <body className="absolute inset-0 z-50 min-h-screen w-full bg-[radial-gradient(#2d2e2e_1px,transparent_1px)] bg-size-[40px_40px]">
+    <html lang="en" className={`${quicksand.className} overflow-x-hidden`}>
+      <body className="absolute inset-0 z-50 min-h-screen w-full overflow-x-hidden bg-[radial-gradient(#2d2e2e_1px,transparent_1px)] bg-size-[40px_40px]">
         <ScrollProgress />
         <Header />
         {children}
