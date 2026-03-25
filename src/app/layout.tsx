@@ -3,7 +3,7 @@ import "../../styles/globals.css";
 import { Quicksand } from "next/font/google";
 import { Header } from "../components/header";
 import { Footer } from "@/components/footer";
-import { ScrollProgress } from "@/components/ui/scroll-progress";
+
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 
@@ -22,8 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${quicksand.className} overflow-x-hidden`}>
-      <body className="absolute inset-0 z-50 min-h-screen w-full overflow-x-hidden bg-[radial-gradient(#2d2e2e_1px,transparent_1px)] bg-size-[40px_40px]">
-        <ScrollProgress />
+      <body className="absolute inset-0 z-50 min-h-screen w-full overflow-x-hidden bg-[radial-gradient(#2d2e2e_1px,transparent_1px)] bg-size-[40px_40px]">        
         <Header />
         {children}
         <Footer />
