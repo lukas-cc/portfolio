@@ -15,8 +15,8 @@ export const ProjectGrid = () => {
             src="/weather-app.png"
             alt="weather app"
             priority
-            width={420}
-            height={270}
+            width={1}
+            height={1}
             sizes="100vw"
             className="h-full w-full rounded-lg object-cover"
           />
@@ -30,8 +30,8 @@ export const ProjectGrid = () => {
             src="/spotify.png"
             alt="spotify"
             priority
-            width={420}
-            height={270}
+            width={1}
+            height={1}
             sizes="100vw"
             className="h-full w-full rounded-lg object-cover"
           />
@@ -45,8 +45,8 @@ export const ProjectGrid = () => {
             src="/stock-io.png"
             alt="stockio"
             priority
-            width={420}
-            height={270}
+            width={1}
+            height={1}
             sizes="100vw"
             className="h-full w-full rounded-lg object-cover"
           />
