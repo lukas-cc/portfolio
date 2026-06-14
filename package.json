@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@11.6.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -27,8 +28,8 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.1",
     "@types/node": "25.9.3",
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
     "eslint": "10.5.0",
     "eslint-config-next": "16.2.9",
     "postcss": "^8.5.15",
@@ -36,11 +37,5 @@
     "prettier-plugin-tailwindcss": "^0.8.0",
     "tailwindcss": "^4.3.1",
     "typescript": "6.0.3"
-  },
-  "pnpm": {
-    "overrides": {
-      "@types/react": "npm:types-react@19.0.0-rc.1",
-      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
-    }
   }
 }
