@@ -43,7 +43,9 @@ const techLogos = [
 export const SkillSectionV2 = () => {
   return (
     <section className="w-screen">
-      <p className="pb-8 text-center text-2xl">My tech stack:</p>
+      <h2 className="mx-auto max-w-6xl px-4 pb-8 text-3xl font-semibold tracking-tight md:px-8 md:text-4xl">
+        Tech stack
+      </h2>
       <div className="relative overflow-hidden">
         <LogoLoop
           logos={techLogos}

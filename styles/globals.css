@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@plugin 'tailwindcss-animate';
+@plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -57,6 +57,11 @@
       height: 0;
     }
   }
+}
+
+@theme inline {
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
 @utility container {
@@ -131,4 +136,30 @@
   body {
     @apply bg-background text-foreground;
   }
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    translate: 0 16px;
+  }
+}
+
+@keyframes shot-in {
+  from {
+    opacity: 0;
+    translate: 0 40px;
+    rotate: 0deg;
+  }
+}
+
+@utility animate-hero-in {
+  animation: hero-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@utility animate-shot-in {
+  animation: shot-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
