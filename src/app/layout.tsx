@@ -1,10 +1,14 @@
 import "../../styles/globals.css";
 
-import { Quicksand } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
-const quicksand = Quicksand({ subsets: ["latin"] });
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+});
 
 export const metadata = {
   title: "Lukas Ciepielowski",
@@ -20,8 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${quicksand.className} overflow-x-hidden`}>
-      <body className="absolute inset-0 z-50 min-h-screen w-full overflow-x-hidden bg-[radial-gradient(#2d2e2e_1px,transparent_1px)] bg-size-[40px_40px]">
+    <html
+      lang="en"
+      className={`${geist.variable} ${geistMono.variable} overflow-x-hidden`}
+    >
+      <body className="min-h-dvh w-full overflow-x-hidden antialiased">
         <Header />
         {children}
         <Footer />
