@@ -137,56 +137,81 @@ export const ProjectList = () => {
                   e.pointerType === "mouse" && setActive(i)
                 }
                 className={cn(
-                  "transition-opacity duration-300",
+                  "group grid gap-4 py-8 transition-opacity duration-300 md:grid-cols-2 md:items-center md:py-10",
                   isDimmed && "opacity-30",
                 )}
               >
-                <a
-                  href={project.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group focus-visible:ring-ring grid gap-4 py-8 focus-visible:ring-1 focus-visible:outline-none md:grid-cols-2 md:items-center md:py-10"
-                >
-                  <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                    <h3 className="group-hover:text-primary text-3xl font-semibold tracking-tight transition-colors md:text-5xl">
+                <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                  <h3 className="group-hover:text-primary text-3xl font-semibold tracking-tight transition-colors md:text-5xl">
+                    <a
+                      href={project.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="focus-visible:ring-ring rounded-md focus-visible:ring-1 focus-visible:outline-none"
+                    >
                       {project.title}
-                    </h3>
-                    {project.status ? (
-                      <span className="text-muted-foreground font-mono text-xs">
-                        {project.status}
-                      </span>
-                    ) : null}
-                  </div>
-                  <div className="flex items-center justify-between gap-6">
-                    <div className="flex flex-col gap-3">
-                      <p className="text-muted-foreground max-w-[40ch] md:text-lg">
-                        {project.description}
-                      </p>
-                      <ul className="flex flex-wrap gap-x-3 gap-y-1 font-mono text-xs">
-                        {project.stack.map((tech) => (
-                          <li
-                            key={tech}
+                    </a>
+                  </h3>
+                  {project.status ? (
+                    <span className="text-muted-foreground font-mono text-xs">
+                      {project.status}
+                    </span>
+                  ) : null}
+                </div>
+                <div className="flex items-center justify-between gap-6">
+                  <div className="flex flex-col gap-3">
+                    <p className="text-muted-foreground max-w-[40ch] md:text-lg">
+                      {project.description}
+                    </p>
+                    <ul className="-mx-1.5 flex flex-wrap font-mono text-xs">
+                      {project.stack.map((tech) => (
+                        <li key={tech}>
+                          <button
+                            type="button"
+                            aria-pressed={pinnedTech === tech}
+                            onClick={() =>
+                              setPinnedTech(pinnedTech === tech ? null : tech)
+                            }
                             className={cn(
-                              "transition-colors",
+                              "focus-visible:ring-ring hover:text-foreground rounded-md px-1.5 py-1 transition-colors focus-visible:ring-1 focus-visible:outline-none",
                               tech === selectedTech
                                 ? "text-primary"
                                 : "text-muted-foreground/70",
                             )}
                           >
                             {tech}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <ArrowTopRightIcon className="size-6 shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
+                  {/* Duplicates the title link as a larger hit area, so it stays out of the tab order. */}
+                  <a
+                    href={project.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    tabIndex={-1}
+                    aria-hidden
+                    className="shrink-0 p-2"
+                  >
+                    <ArrowTopRightIcon className="size-6 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                  </a>
+                </div>
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  tabIndex={-1}
+                  aria-hidden
+                  className="md:hidden"
+                >
                   <Image
                     src={project.image}
                     alt=""
                     width={2980}
                     height={1980}
                     sizes="90vw"
-                    className="h-auto w-full rounded-xl border border-white/10 md:hidden"
+                    className="h-auto w-full rounded-xl border border-white/10"
                   />
                 </a>
               </li>
