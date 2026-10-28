@@ -22,24 +22,26 @@ export const Footer = () => {
         <ul className="flex flex-wrap justify-center gap-12 text-2xl md:mr-10 md:justify-end md:gap-20">
           {Object.entries(navItems).map(([path, { name }]) => {
             return (
-              <Link key={path} href={path}>
-                <span
-                  className={
-                    currentPath === path
-                      ? "relative cursor-pointer px-3 py-1"
-                      : "delay-50 relative cursor-pointer px-3 py-1 transition ease-in-out hover:text-primary"
-                  }
-                >
-                  {name}
-                  {currentPath === path ? (
-                    <motion.div
-                      layoutId="footer"
-                      transition={{ type: "spring", duration: 0.6 }}
-                      className="absolute inset-0 z-[-1] rounded-md bg-zinc-700/60"
-                    />
-                  ) : null}
-                </span>
-              </Link>
+              <li key={path}>
+                <Link href={path}>
+                  <span
+                    className={
+                      currentPath === path
+                        ? "relative cursor-pointer px-3 py-1"
+                        : "hover:text-primary relative cursor-pointer px-3 py-1 transition delay-50 ease-in-out"
+                    }
+                  >
+                    {name}
+                    {currentPath === path ? (
+                      <motion.div
+                        layoutId="footer"
+                        transition={{ type: "spring", duration: 0.6 }}
+                        className="absolute inset-0 z-[-1] rounded-md bg-zinc-700/60"
+                      />
+                    ) : null}
+                  </span>
+                </Link>
+              </li>
             );
           })}
         </ul>

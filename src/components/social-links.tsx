@@ -6,8 +6,9 @@ export const SocialLinks = () => {
     <section className="flex flex-col items-center gap-8 pb-20">
       <p className="text-2xl">Socials</p>
       <div className="flex justify-center gap-12 md:w-1/3 md:gap-8">
-        <Button variant="ghost" size="icon">
+        <Button variant="ghost" size="icon" asChild>
           <a
+            aria-label="GitHub"
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/lukas-cc"
@@ -15,8 +16,9 @@ export const SocialLinks = () => {
             <GithubIcon width={25} height={25} />
           </a>
         </Button>
-        <Button variant="ghost" size="icon">
+        <Button variant="ghost" size="icon" asChild>
           <a
+            aria-label="Twitter"
             rel="noopener noreferrer"
             target="_blank"
             href="https://twitter.com/just_scepta"
@@ -24,8 +26,9 @@ export const SocialLinks = () => {
             <TwitterIcon width={25} height={25} />
           </a>
         </Button>
-        <Button variant="ghost" size="icon">
+        <Button variant="ghost" size="icon" asChild>
           <a
+            aria-label="LinkedIn"
             rel="noopener noreferrer"
             target="_blank"
             href="https://www.linkedin.com/in/lukas-ciepielowski-ba3024293/"
