@@ -7,6 +7,8 @@ const shots = [
     alt: "Weather app screenshot",
     className: "right-0 top-0 w-[72%]",
     rotate: "4deg",
+    // Same size as the others and painted first, so this is the LCP image.
+    fetchPriority: "high" as const,
   },
   {
     src: "/spotify.png",
@@ -19,7 +21,6 @@ const shots = [
     alt: "Stock.io screenshot",
     className: "bottom-0 right-[8%] w-[72%]",
     rotate: "1deg",
-    priority: true,
   },
 ];
 
@@ -37,7 +38,8 @@ export const HeroVisual = () => {
             alt={shot.alt}
             width={2980}
             height={1980}
-            priority={shot.priority}
+            loading="eager"
+            fetchPriority={shot.fetchPriority}
             sizes="(min-width: 768px) 40vw, 90vw"
             className="h-auto w-full rounded-xl border border-white/10 shadow-2xl shadow-zinc-950/80"
           />
