@@ -176,7 +176,7 @@ export const ProjectList = () => {
                               "focus-visible:ring-ring hover:text-foreground rounded-md px-1.5 py-1 transition-colors focus-visible:ring-1 focus-visible:outline-none",
                               tech === selectedTech
                                 ? "text-primary"
-                                : "text-muted-foreground/70",
+                                : "text-muted-foreground",
                             )}
                           >
                             {tech}
